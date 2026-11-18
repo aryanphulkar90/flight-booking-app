@@ -14,4 +14,7 @@ router.post(
 //api/v1/flights?trips=BLR-DEL
 router.get('/',FlightController.getAllFlights)
 
+router.get("/:id", FlightController.getFlight);
+
+
 module.exports = router;
